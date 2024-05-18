@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real time Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="person">
+    <button class="button person-selector-button active-person" id="john-select">John</button>
+    <button class="button person-selector-button" id="jane-select">Jane</button>
+
+  </div>
+  <div class="chat-can">
+    <h2 class="chat-header">john chatting</h2>
+    <div class="chat-msg">
+        <div class="message blue-bg">
+            <div class="message-sender">
+                john
+            </div>
+            <div class="msg-text">Hey jane,what's up</div>
+            <div class="msg-time">10:30</div>
+        </div>
+        <div class="message gray-bg">
+            <div class="message-sender">
+                jane 
+            </div>
+            <div class="msg-text">Hii john,how are you</div>
+            <div class="msg-time">10:40</div>
+        </div>
+    </div>
+    <form class="chat-input">
+        <input type="text" class="chat-in" required placeholder="Type your message here......">
+        <button type="submit" class="button send-button">send</button>
+    </form>
+    <button class="button clear-chat-button">clear chat</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
